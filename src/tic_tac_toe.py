@@ -26,8 +26,8 @@ def is_win(player, board_snapshot=board):
             return True
         if all([board_snapshot[j][i] == player for j in range(3)]):  # Columns
             return True
-    if board_snapshot[1][0] == board_snapshot[1][1] == board_snapshot[2][2] == player or \
-       board_snapshot[0][0] == board_snapshot[1][1] == board_snapshot[2][0] == player:  # Diagonals
+    if board_snapshot[0][0] == board_snapshot[1][1] == board_snapshot[2][2] == player or \
+       board_snapshot[0][2] == board_snapshot[1][1] == board_snapshot[2][0] == player:  # Diagonals
         return True
     return False
 
