@@ -12,5 +12,4 @@ Welcome to my_week_7's documentation!
 
 
 
-   tic_tac_toe.py
-   documentation.py
+   modules
