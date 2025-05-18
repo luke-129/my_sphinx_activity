@@ -1,5 +1,6 @@
 import src.tic_tac_toe as toe
 
+
 def main():
     current_player = 'X'
     moves = 0
