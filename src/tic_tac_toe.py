@@ -8,10 +8,15 @@ board = [[' ' for _ in range(3)] for _ in range(3)]
 
 
 def print_board():
+    layout = []
     for row in board:
-     
-        print('|'.join(row))
-        print('-' * 5)
+        layout.append('|'.join(row))
+        layout.append('-' * 5)
+    result = '\n'.join(layout)
+    print(result)
+
+    # return the result for testing
+    return result
 
 
 def is_win(player, board_snapshot=board):
