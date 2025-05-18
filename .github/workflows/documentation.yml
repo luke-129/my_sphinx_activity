@@ -25,7 +25,7 @@ jobs:
       - name: Coverage
         run: |
           coverage run -m unittest discover -s tests
-          coverage xml -o ../coverage.xml
+          coverage xml
       - name: Sphinx build
         run: |
           sphinx-build docs _build
